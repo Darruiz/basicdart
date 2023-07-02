@@ -199,4 +199,16 @@ void main() {
 //aum(n1, n2) {
 //  var au = n1 * n2;
 //  return au; }
+
+//Ex com promoção
+
+  // var nome = "Darruiz";
+  // var promo = true;
+  // var sal1 = 3500;
+  // print("$nome é junior e ganha $sal1");
+  // if (promo == true) {
+  //   var sal2 = sal1 * 4;
+  //   print(
+  //       "$nome foi promovido para pleno seu salário passa de $sal1 para $sal2");
+  // }
 }
