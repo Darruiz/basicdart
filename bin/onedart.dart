@@ -363,5 +363,45 @@ Tipos de repetições / loops
          "Você não pode comprar um carro da ${info['carro']} você precisa de mais R\$$fal para compralo.");
    }
  } 
+
+ introdução a classes e metodos class methods 
+ classe / calss sempre vair se referir a um objeto do mundo real 
+ construtores
  */
+
+  var infos = [
+    InfoCarro('Darruiz', Carro('Ferrari', '408', 12, 2020, 'Vermelha')),
+    InfoCarro('Dimitri', Carro('Porsche', '911', 8, 2020, 'Preta')),
+    InfoCarro('Gustavo', Carro('Chevrolet', 'Cobalt', 3, 2018, 'Branco')),
+    InfoCarro('Diego', Carro('Ford', 'Fusion', 6, 2016, 'Preto')),
+  ];
+
+  for (var info in infos) {
+    if (info.carro.marca == 'Ferrari' || info.carro.marca == 'Porsche')
+      print(
+          "O ${info.nome} é dono de uma ${info.carro.marca} modelo ${info.carro.modelo}"
+          " ano ${info.carro.ano} com ${info.carro.cilindros} cilindros, com a cor ${info.carro.cor}");
+    else {
+      print(
+          "O ${info.nome} é dono de um ${info.carro.marca} modelo ${info.carro.modelo}"
+          " ano ${info.carro.ano} com ${info.carro.cilindros} cilindros, da cor ${info.carro.cor}");
+    }
+  }
+}
+
+class InfoCarro {
+  String nome;
+  Carro carro;
+
+  InfoCarro(this.nome, this.carro);
+}
+
+class Carro {
+  String cor;
+  String marca;
+  int cilindros;
+  int ano;
+  String modelo;
+
+  Carro(this.marca, this.modelo, this.cilindros, this.ano, this.cor);
 }
