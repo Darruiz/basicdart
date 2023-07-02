@@ -225,6 +225,8 @@ void main() {
   // }
 
   //vetor bi dimencional + seleção parcial / parce
+  //chave e valor exemplo var ex = [ {"Chave": "valor"}, {"Chave2": "valor2"}]
+  //esse é o conceito bi dimencional
 
 //  var infos = [
 //    {"nome": "Darruiz", "sal": 5000},
@@ -291,4 +293,23 @@ void main() {
 // for (var info in infos) {
 //   print("Nome: ${info['nome']}  Salário: ${info['sal']}");
 // }
+
+//Conjuntos set exs: var set = {Dz, Pm, ex}; Não aceitam valores bidimencionados (Sets)
+
+//Tipos de repetições / loops
+
+  var max = 10;
+  var max1 = 25;
+  for (var n1 = 0; n1 <= max; n1++) {
+    print(n1);
+    if (n1 >= max) {
+      while (n1 < max1) {
+        n1++;
+        print(n1);
+      }
+    }
+    if (n1 == max1) {
+      print("n1 é igual a $n1");
+    }
+  }
 }
