@@ -526,4 +526,41 @@ incluindo o nome do proprietário, marca, modelo, capacidade de armazenamento RA
 */
 
 //Exemplo 3 de tipo dessa classe
+
+  var infos = [
+    infopc('Darruiz', pc('I9 9900K', 64, 4000, 1000, true)),
+    infopc('Diego', pc('Ryzen 5 5600', 16, 1000, 600, true)),
+    infopc('Gustavo', pc('i7 4790', 16, 500, 500, true)),
+    infopc('Fernando', pc('i7 4790K', 8, 480, 600, false)),
+    infopc('José', pc('Celeron Dual Core', 4, 240, 300, false))
+  ];
+  for (var info in infos) {
+    if (info.pcs.pvd == true) {
+      print("O pc do ${info.nome} tem placa de vídeo "
+          " e possui o processador ${info.pcs.proc} conta com "
+          "${info.pcs.ram}GB RAM e também ${info.pcs.rom}GB ROM, "
+          "e a fonte que puxa tudo isso conta com ${info.pcs.fonte}W de potência.");
+    } else {
+      print("O pc do ${info.nome} não tem placa de vídeo "
+          " e possui o processador ${info.pcs.proc} conta com "
+          "${info.pcs.ram}GB RAM e também ${info.pcs.rom}GB ROM, "
+          "e a fonte que puxa essa merda conta com ${info.pcs.fonte}W de potência.");
+    }
+  }
+}
+
+class infopc {
+  String nome;
+  pc pcs;
+  infopc(this.nome, this.pcs);
+}
+
+class pc {
+  String proc;
+  int ram;
+  int rom;
+  int fonte;
+  bool pvd;
+
+  pc(this.proc, this.ram, this.rom, this.fonte, this.pvd);
 }
