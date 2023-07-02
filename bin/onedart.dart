@@ -641,5 +641,73 @@ class valor2 extends valor {
   int valores = 15;
   int valor3 = 20;
 }
+
+conceito de polimorfismo
+
+  pagamento Pagamento = pagarcomboleto();
+  Pagamento.pagar();
+
+  pagamento PagamentoPix = pagarcompix();
+  PagamentoPix.pagar();
+
+  falar girafas = girafa();
+  girafas.falando();
+  falar dinos = dino();
+  dinos.falando();
+}
+
+abstract class pagamento {
+  void pagar();
+}
+
+class pagarcomboleto implements pagamento {
+  void pagar() {
+    print("Pagando com boleto");
+  }
+}
+
+class pagarcompix implements pagamento {
+  void pagar() {
+    print("Pagando com PIX");
+  }
+}
+
+abstract class falar {
+  void falando();
+}
+
+class girafa implements falar {
+  @override
+  void falando() {
+    print("Eu sou uma girafa");
+  }
+}
+
+class dino implements falar {
+  @override
+  void falando() {
+    print("Eu sou uma dinossauro");
+  }
+}
 */
+  pagamento pixs = pagarcompix();
+  pixs.pagar();
+  pagamento carts = pagarcomcartao();
+  carts.pagar();
+}
+
+abstract class pagamento {
+  void pagar();
+}
+
+class pagarcompix implements pagamento {
+  void pagar() {
+    print("Pagando com pix");
+  }
+}
+
+class pagarcomcartao implements pagamento {
+  void pagar() {
+    print("Pagando com cartão");
+  }
 }
