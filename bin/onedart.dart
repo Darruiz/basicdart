@@ -8,12 +8,16 @@ void main() {
   //String nome = 'Darruiz';
   //int nome = 3;
   //Object nome = 'Darruiz';
-  //dynamic nome = 'Darruiz'; //Dynamic é uma VÁRIAVEL dinamica que permite alterar valor facilmente após definição
+  //dynamic nome = 'Darruiz';
+  ////Dynamic é uma VÁRIAVEL dinamica que p
+  //ermite alterar valor facilmente
+  //após definição
   //print('A soma de $ter + $rer é de $resul meu nome é $nome');
 
   //Valor padrão/Default value
 //Algumas variáveis não podem receber valor nulo  non-nullable types
-//Quando adicionado ? ao lado do tipo então a variável pasdsa a poder receber um valor nulo/null
+//Quando adicionado ? ao lado do tipo então a variável
+// passa a poder receber um valor nulo/null
 //ela precisa ser INICIALIZADA
   //Object? ex = null;
   //double ex = null;
@@ -26,7 +30,8 @@ void main() {
 
   //print(ex);
 
-  //Late variables ajuda a declarar e inicializar posteriomente variaveis de instancia e de nivel superior
+  //Late variables ajuda a declarar e inicializar posteriomente
+  //variaveis de instancia e de nivel superior
 
   //late var n5 = _getn5();
   // print('Valor é $n5');
@@ -71,4 +76,24 @@ void main() {
 //div(var n1, var n2) {
   // var r = n1 / n2;
   // return r;
+
+  //Final e const caso o valor da variavel nunca mude ou tenha que mudar
+  //fianl em tempo de execução ou produção pode ter ser valor
+  // alterado via função ex abaixo
+
+  //final teste = funnome();
+
+  //print('$teste');
+
+//funnome() => 'teste 45';
+
+//Porem isso só da certo com final já com const é necessário que ela conheça
+//o valor já no ambiente de compilação e precisa ser
+//puxado pelo valor dele ou buscar valor dele
+//Exemplo abaixo
+
+  //const teste = 'teste 45';
+  //print(teste);
+
+//teste() => 'teste 45';
 }
