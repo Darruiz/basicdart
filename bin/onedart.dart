@@ -689,7 +689,9 @@ class dino implements falar {
     print("Eu sou uma dinossauro");
   }
 }
-*/
+
+poliformismo
+
   pagamento pixs = pagarcompix();
   pixs.pagar();
   pagamento carts = pagarcomcartao();
@@ -710,4 +712,6 @@ class pagarcomcartao implements pagamento {
   void pagar() {
     print("Pagando com cartão");
   }
+}
+*/
 }
