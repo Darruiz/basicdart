@@ -211,4 +211,69 @@ void main() {
   //   print(
   //       "$nome foi promovido para pleno seu salário passa de $sal1 para $sal2");
   // }
+
+  //Listas / list / lists arrays no dart são listas que herdam diretamente ou indiretamento do object
+  // Ex de lista => var lista = [];
+  //ex com list
+  //var empl = ["Jorge", "Pedro", "Carlos"];
+
+  //if (empl.length < 4) {
+  // print("Os funcionários atuais são $empl");
+  // var nempl = ["Paulo", "Gustavo"];
+  // var tot = [empl, nempl];
+  //print("Os novos funcionários são $nempl agora o time completo é $tot");
+  // }
+
+  //vetor bi dimencional + seleção parcial / parce
+
+  var infos = [
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+    {"nome": "Darruiz", "sal": 5000},
+    {"nome": "Paulo", "sal": 4500},
+    {"nome": "Jorge", "sal": 4000},
+    {"nome": "Gustavo", "sal": 6000},
+  ];
+
+  for (var info in infos) {
+    print('Nome: ${info["nome"]} Salário: ${info["sal"]}');
+    if (int.parse(info["sal"].toString()) <= 5000) {
+      var aut = int.parse(info["sal"].toString()) * 1.5;
+      print('Novo salário de ${info["nome"]}: $aut');
+    }
+  }
 }
