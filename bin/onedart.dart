@@ -367,7 +367,45 @@ Tipos de repetições / loops
  introdução a classes e metodos class methods 
  classe / calss sempre vair se referir a um objeto do mundo real 
  construtores
- */
+
+
+
+
+ codigo abaixo 
+ O código em questão cria uma lista chamada infos que contém objetos do tipo InfoCarro.
+  Cada objeto InfoCarro representa informações sobre uma pessoa e o carro que ela possui.
+
+A estrutura InfoCarro possui duas propriedades: nome, que representa o 
+nome da pessoa, e carro, que é um objeto do tipo Carro.
+
+A estrutura Carro possui várias propriedades, como cor, marca,
+ cilindros, ano e modelo, que representam características do carro.
+
+O código utiliza um loop for-in para percorrer cada elemento da 
+lista infos. Para cada elemento, ele verifica se a marca do carro é igual
+ a 'Ferrari' ou 'Porsche'. Se a condição for verdadeira, ele imprime uma
+  mensagem específica usando as informações da pessoa e do carro. Caso contrário,
+  ele imprime uma mensagem genérica.
+
+Aqui está uma explicação passo a passo do código:
+
+O código define a lista infos contendo objetos do tipo InfoCarro. Cada objeto 
+é criado com um nome de pessoa e um objeto Carro correspondente.
+Inicia-se o loop for-in para iterar sobre cada elemento da lista infos.
+Dentro do loop, a condição if verifica se a marca do carro é igual a 'Ferrari' ou 'Porsche'.
+Se a condição for verdadeira, o código imprime uma mensagem específica 
+utilizando as informações da pessoa e do carro, incluindo a marca, 
+o modelo, o ano, o número de cilindros e a cor do carro.
+Caso a condição seja falsa, o código imprime uma mensagem genérica 
+com as informações da pessoa e do carro.
+O loop continua até percorrer todos os elementos da lista infos.
+Após o término do loop, o programa é concluído.
+O resultado final será a impressão das mensagens correspondentes
+ para cada elemento da lista, de acordo com as condições especificadas.
+
+Certifique-se de que as estruturas InfoCarro e Carro estão corretamente
+ definidas e as propriedades possuem os valores esperados para que o código funcione corretamente.
+ 
 
   var infos = [
     InfoCarro('Darruiz', Carro('Ferrari', '408', 12, 2020, 'Vermelha')),
@@ -404,4 +442,5 @@ class Carro {
   String modelo;
 
   Carro(this.marca, this.modelo, this.cilindros, this.ano, this.cor);
+  */
 }
