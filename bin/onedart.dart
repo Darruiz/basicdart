@@ -523,7 +523,7 @@ Em resumo, o código cria uma lista de informações de celulares e, em seguida,
 itera sobre essa lista para exibir detalhes sobre cada celular, 
 incluindo o nome do proprietário, marca, modelo, capacidade de armazenamento RAM e ROM,
  cor e preço. O preço é calculado com base na quantidade de RAM do celular.
-*/
+
 
 //Exemplo 3 de tipo dessa classe
 
@@ -563,4 +563,39 @@ class pc {
   bool pvd;
 
   pc(this.proc, this.ram, this.rom, this.fonte, this.pvd);
+}
+
+
+
+Mais um ex de classes
+*/
+  var casas = [
+    infoclass('Darruiz', casa('São Paulo', 750, 10800, 0)),
+    infoclass('Diego', casa('Bauru', 140, 3569, 0)),
+    infoclass('Dimitri', casa('Bauru', 250, 5687, 10)),
+  ];
+  for (var info in casas) {
+    print("O Sr.${info.nome} tem uma casa na cidade de ${info.cas.cidade}"
+        " com ${info.cas.mquadrados}M2 com um valor por metro quadrado de R\$${info.cas.pmq}"
+        " totalizando R\$${info.cas.price}");
+  }
+}
+
+class infoclass {
+  String nome;
+  casa cas;
+  infoclass(this.nome, this.cas);
+}
+
+class casa {
+  String cidade;
+  int mquadrados;
+  double pmq;
+  double price;
+  casa(this.cidade, this.mquadrados, this.pmq, this.price) {
+    calculateprice();
+  }
+  calculateprice() {
+    price = pmq * mquadrados;
+  }
 }
