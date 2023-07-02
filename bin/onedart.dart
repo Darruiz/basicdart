@@ -100,7 +100,7 @@ void main() {
   //final não se preucupa com valor apenas com sua atribuição no final
   //os valores não são constantes já const você congela os valores
 
-  //Tipos integrados Buillt-in types  (tipos integrados) numeros e strings
+  //Tipos integrados Buillt-in types  (tipos integrados) numeros, strings e booleanos
   //para adicionar um 's em outras linguas usar \ caso o valor seja de uso
 
   // var ing = 'it\'s great';
@@ -144,4 +144,26 @@ void main() {
   // var leng = "Dart";
   // var lear = 'e estou estudando ${leng.toUpperCase()}';
   // print(' $txt  $lear');
+
+  // Exs de booleanos com if para exemplos de salários
+
+  var nome = 'Darruiz';
+  var ltr = "a";
+  var n1 = 1800;
+  var n2 = 340;
+  var ref = 3000;
+  var sm = soma(n1, n2);
+  if (nome.contains(ltr)) {
+    print("O nome $nome contem a letra $ltr");
+    if (n1 + n2 >= ref) {
+      print("O $nome ganha mais que 3000 ele ganha $sm");
+    } else {
+      print('$nome ganha menos que $ref ele ganha $sm');
+    }
+  }
+}
+
+soma(n1, n2) {
+  var sm = n1 + n2;
+  return sm;
 }
