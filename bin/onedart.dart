@@ -14,6 +14,7 @@ void main() {
   //Valor padrão/Default value
 //Algumas variáveis não podem receber valor nulo  non-nullable types
 //Quando adicionado ? ao lado do tipo então a variável pasdsa a poder receber um valor nulo/null
+//ela precisa ser INICIALIZADA
   //Object? ex = null;
   //double ex = null;
   //num ex = null;
@@ -24,4 +25,50 @@ void main() {
   //List ex = null;
 
   //print(ex);
+
+  //Late variables ajuda a declarar e inicializar posteriomente variaveis de instancia e de nivel superior
+
+  //late var n5 = _getn5();
+  // print('Valor é $n5');
+//}
+
+//int _getn5() {
+  //var n5 = 100;
+  //print('Valor é $n5 está vindo da func');
+  //return n5;
+
+  //exemplo 2
+
+  //late String nome1 = getnome1();
+  //print('O nome é $nome1');
+//}
+
+//getnome1() {
+  //var nome1 = 'Darruiz';
+  //return nome1;
+
+  //Ex de func 3
+
+  //var n1 = 10;
+  //var n2 = 10;
+  //dynamic r = soma(n1, n2);
+  // print('A soma de $n1 + $n2 é de $r');
+  //var n3 = 5;
+  //var n4 = 10;
+  // r = soma(n3, n4);
+  // print('A soma de $n3 + $n4 é de $r');
+//  r = div(n1, n2);
+  // print('A div de $n1 por $n2 é de $r');
+//  r = div(n3, n4);
+  // print('A div de $n3 por $n4 é de $r');
+//}
+
+//soma(var n1, var n2) {
+  //var r = n1 + n2;
+  // return r;
+//}
+
+//div(var n1, var n2) {
+  // var r = n1 / n2;
+  // return r;
 }
