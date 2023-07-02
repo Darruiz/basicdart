@@ -226,54 +226,69 @@ void main() {
 
   //vetor bi dimencional + seleção parcial / parce
 
-  var infos = [
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-    {"nome": "Darruiz", "sal": 5000},
-    {"nome": "Paulo", "sal": 4500},
-    {"nome": "Jorge", "sal": 4000},
-    {"nome": "Gustavo", "sal": 6000},
-  ];
+//  var infos = [
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//    {"nome": "Darruiz", "sal": 5000},
+//    {"nome": "Paulo", "sal": 4500},
+//    {"nome": "Jorge", "sal": 4000},
+//    {"nome": "Gustavo", "sal": 6000},
+//  ];
+//
+//  for (var info in infos) {
+//    print('Nome: ${info["nome"]} Salário: ${info["sal"]}');
+//    if (int.parse(info["sal"].toString()) <= 5000) {
+//      var aut = int.parse(info["sal"].toString()) * 1.5;
+//      print('Novo salário de ${info["nome"]}: $aut');
+//    }
+//  }
 
-  for (var info in infos) {
-    print('Nome: ${info["nome"]} Salário: ${info["sal"]}');
-    if (int.parse(info["sal"].toString()) <= 5000) {
-      var aut = int.parse(info["sal"].toString()) * 1.5;
-      print('Novo salário de ${info["nome"]}: $aut');
-    }
-  }
+//Exs de adição com loop em listas
+
+// var infos = [
+//   {"nome": "Darruiz", "sal": 4000},
+//   {"nome": "Darruiz", "sal": 4000},
+// ];
+//
+// while (infos.length < 150000) {
+//   infos.add({"nome": "Darruiz", "sal": "5000"});
+// }
+//
+// for (var info in infos) {
+//   print("Nome: ${info['nome']}  Salário: ${info['sal']}");
+// }
 }
