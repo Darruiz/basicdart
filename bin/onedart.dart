@@ -147,23 +147,56 @@ void main() {
 
   // Exs de booleanos com if para exemplos de salários
 
-  var nome = 'Darruiz';
-  var ltr = "a";
-  var n1 = 1800;
-  var n2 = 340;
-  var ref = 3000;
-  var sm = soma(n1, n2);
-  if (nome.contains(ltr)) {
-    print("O nome $nome contem a letra $ltr");
-    if (n1 + n2 >= ref) {
-      print("O $nome ganha mais que 3000 ele ganha $sm");
-    } else {
-      print('$nome ganha menos que $ref ele ganha $sm');
-    }
-  }
-}
+  //var nome = 'Darruiz';
+  //var ltr = "a";
+  //var n1 = 1800;
+  //var n2 = 340;
+  //var ref = 3000;
+  //var sm = soma(n1, n2);
+  //if (nome.contains(ltr)) {
+  //  print("O nome $nome contem a letra $ltr");
+  //  if (n1 + n2 >= ref) {
+  //    print("O $nome ganha mais que 3000 ele ganha $sm");
+  //  } else {
+  //    print('$nome ganha menos que $ref ele ganha $sm');
+  //  }
+// //}
+//
+//
+//soma(n1, n2) {
+//  var sm = n1 + n2;
+//  return sm;
+//}
 
-soma(n1, n2) {
-  var sm = n1 + n2;
-  return sm;
+//Exemplos de aumento em 1 pessoa
+
+//  var nome = "Darruiz";
+//  var sal = 1998;
+//  var min = 1999;
+//
+//  print("$nome ganha $sal");
+//  if (sal <= min) {
+//    var aum = 1.10;
+//    var nsal = sal * aum;
+//    print("Como o $nome ganha menos que $min ele irá receber $aum de aumento"
+//        " isso dara um novo salário de $nsal");
+//  }
+
+//Exemplo de aumento com func
+
+  //var nome = "Darruiz";
+  //var sal = 1800;
+  //var min = 1801;
+  //print("$nome ganha $sal");
+  //if (sal < min) {
+  //  var aumet = 1.50;
+  //  var nsal = aum(sal, aumet);
+//
+  //  print("Como $nome ganha menos que $min ele irá receber $aumet de salário"
+  //      "seu salário passara de $sal para $nsal");
+  //}
+
+//aum(n1, n2) {
+//  var au = n1 * n2;
+//  return au; }
 }
