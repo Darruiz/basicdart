@@ -1,3 +1,7 @@
+import 'dart:ffi';
+
+import 'package:onedart/onedart.dart';
+
 void main() {
   /*
   Init em variáveis
@@ -442,5 +446,84 @@ class Carro {
   String modelo;
 
   Carro(this.marca, this.modelo, this.cilindros, this.ano, this.cor);
-  */
+  
+
+
+
+  var infos = [
+    infocel('Darruiz', cel('Samsung', 'S23', 12, 128, 'verde água', 0)),
+    infocel('Gustavo', cel('Apple', 'Iphone 12', 4, 128, 'Branco', 0)),
+    infocel('Diego', cel('Samsung', 'S20', 8, 128, 'Preto', 0)),
+  ];
+
+  for (var info in infos) {
+    print("O ${info.nome} é dono do celular da marca ${info.celu.marca}"
+        " modelo ${info.celu.modelo} com ${info.celu.ram}GB RAM e ${info.celu.rom}GB ROM"
+        " e possui a cor ${info.celu.cor} e tem o preço de ${info.celu.price}");
+  }
+}
+
+class cel {
+  String marca;
+  String modelo;
+  int rom;
+  int ram;
+  String cor;
+  double price;
+
+  cel(this.marca, this.modelo, this.ram, this.rom, this.cor, this.price) {
+    calculateprice();
+  }
+  void calculateprice() {
+    price = 500 * ram.toDouble();
+  }
+}
+
+class infocel {
+  String nome;
+  cel celu;
+  infocel(this.nome, this.celu);
+} 
+
+Explicação completa desse codigo com classes sobre celulares / celular 
+A classe cel é definida com as seguintes propriedades:
+
+marca: uma string que representa a marca do celular.
+modelo: uma string que representa o modelo do celular.
+rom: um inteiro que representa a capacidade de armazenamento ROM do celular em GB.
+ram: um inteiro que representa a capacidade de armazenamento RAM do celular em GB.
+cor: uma string que representa a cor do celular.
+price: um double que representa o preço do celular. Inicialmente, é definido como 0.
+O construtor da classe cel é definido, que recebe os argumentos 
+para inicializar as propriedades da classe. Ele também chama o método 
+calculateprice() para calcular o preço com base na quantidade de RAM.
+
+O método calculateprice() é definido na classe cel. 
+Ele multiplica a quantidade de RAM (ram) por 500 e armazena
+ o resultado na propriedade price. O valor de ram é convertido em um double antes da multiplicação.
+
+A classe infocel é definida com as seguintes propriedades:
+
+nome: uma string que representa o nome do proprietário do celular.
+celu: um objeto da classe cel que representa as informações do celular.
+A lista infos é criada, contendo instâncias da classe infocel. 
+Cada instância contém o nome do proprietário e as informações do respectivo celular.
+
+O loop for-in itera sobre cada elemento da lista infos. 
+Em cada iteração, a string formatada é impressa utilizando as propriedades do objeto info:
+
+info.nome representa o nome do proprietário.
+info.celu.marca representa a marca do celular.
+info.celu.modelo representa o modelo do celular.
+info.celu.ram representa a capacidade de armazenamento RAM do celular.
+info.celu.rom representa a capacidade de armazenamento ROM do celular.
+info.celu.cor representa a cor do celular.
+info.celu.price representa o preço do celular.
+Em resumo, o código cria uma lista de informações de celulares e, em seguida, 
+itera sobre essa lista para exibir detalhes sobre cada celular, 
+incluindo o nome do proprietário, marca, modelo, capacidade de armazenamento RAM e ROM,
+ cor e preço. O preço é calculado com base na quantidade de RAM do celular.
+*/
+
+//Exemplo 3 de tipo dessa classe
 }
