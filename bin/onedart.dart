@@ -96,4 +96,52 @@ void main() {
   //print(teste);
 
 //teste() => 'teste 45';
+
+  //final não se preucupa com valor apenas com sua atribuição no final
+  //os valores não são constantes já const você congela os valores
+
+  //Tipos integrados Buillt-in types  (tipos integrados) numeros e strings
+  //para adicionar um 's em outras linguas usar \ caso o valor seja de uso
+
+  // var ing = 'it\'s great';
+  //print(ing);
+  // ou usar diferentes "" exemplo abaixo
+
+  //var ing = "It's great";
+  // print(ing);
+
+  //concatenar / concatenando em dart
+
+  //var nome = "Darruiz";
+  //var txt = 'Eu sou o "$nome"';
+  //var leng = "Dart";
+  //var lear = 'e estou estudando $leng';
+  // print(' $txt  $lear');
+
+//Exemplo com tratamento de string
+
+// var nome = "Darruiz".toUpperCase();
+// var txt = 'Eu sou o "$nome"';
+// var leng = "Dart".toUpperCase();
+// var lear = 'e estou estudando $leng';
+// print(' $txt  $lear');
+
+  //adição depois do valor da string para tratamento da mesma
+  //ou podemos tambem colocar ${variavel.tratamento}
+  // após o . dentro das ${} podemos fazer o tratamento de string
+  //Isso é para acionar propriedade do objeto
+
+  //var nome = "Darruiz";
+  //var txt = 'Eu sou o "${nome.toUpperCase()}"';
+  //var leng = "Dart";
+  //var lear = 'e estou estudando ${leng.toUpperCase()}';
+  //print(' $txt  $lear');
+
+//aqui podemos substituir o valor de uma string para modificar o valor original
+
+  // var nome = "Darruiz";
+  // var txt = 'Eu sou o "${nome.replaceAll(nome, 'Jorge')}"';
+  // var leng = "Dart";
+  // var lear = 'e estou estudando ${leng.toUpperCase()}';
+  // print(' $txt  $lear');
 }
