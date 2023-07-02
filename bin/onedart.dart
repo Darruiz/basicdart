@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:onedart/onedart.dart';
+import 'package:test/test.dart';
 
 void main() {
   /*
@@ -568,7 +569,7 @@ class pc {
 
 
 Mais um ex de classes
-*/
+
   var casas = [
     infoclass('Darruiz', casa('São Paulo', 750, 10800, 0)),
     infoclass('Diego', casa('Bauru', 140, 3569, 0)),
@@ -598,4 +599,47 @@ class casa {
   calculateprice() {
     price = pmq * mquadrados;
   }
+}
+
+iniciar conceito de classe abstrata / abstract class tem que seguir um contrato
+conceito de herança extent extents  
+
+  brl1 Brl1 = brl1();
+  brl2 Brl2 = brl2();
+  print(Brl1.barulhos());
+  if (Brl1.barulhos() == Brl1.barulhos()) {
+    print(Brl2.barulhos());
+  }
+}
+
+abstract class barulho {
+  String barulhos();
+}
+
+class brl1 implements barulho {
+  String barulhos() {
+    return "Hello world";
+  }
+}
+
+class brl2 implements barulho {
+  String barulhos() {
+    return "Olá";
+  }
+}
+
+
+Exemplo de herança logo abaixo 
+  print(valor2().valores + valor2().valor3);
+}
+
+class valor {
+  int valores = 15;
+}
+
+class valor2 extends valor {
+  int valores = 15;
+  int valor3 = 20;
+}
+*/
 }
