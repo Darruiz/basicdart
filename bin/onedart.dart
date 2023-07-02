@@ -298,18 +298,68 @@ void main() {
 
 //Tipos de repetições / loops
 
-  var max = 10;
-  var max1 = 25;
-  for (var n1 = 0; n1 <= max; n1++) {
-    print(n1);
-    if (n1 >= max) {
-      while (n1 < max1) {
-        n1++;
-        print(n1);
-      }
-    }
-    if (n1 == max1) {
-      print("n1 é igual a $n1");
+  //var max = 10;
+  //var max1 = 25;
+  //for (var n1 = 0; n1 <= max; n1++) {
+  //  print(n1);
+  //  if (n1 >= max) {
+  //    while (n1 < max1) {
+  //      n1++;
+  //      print(n1);
+  //    }
+  //  }
+  //  if (n1 == max1) {
+  //    print("n1 é igual a $n1");
+  //  }
+  //}
+
+  //Teste de condicionais
+  // var infos = [
+  //   {'nome': 'Darruiz', 'nota': 10},
+  //   {'nome': 'Gustavo', 'nota': 5},
+  //   {'nome': 'Paulo', 'nota': 7}
+  // ];
+  // for (var info in infos) {
+  //   if (int.parse(info["nota"].toString()) <= 6) {
+  //     print("Aluno ${info['nome']} está reprovado tirou ${info['nota']}");
+  //   } else {
+  //     print("O aluno ${info['nome']} foi aprovado pois tirou ${info['nota']}");
+  //   }
+  // }
+
+// var infos = [
+//   {"marca": "BMW", "price": 154000},
+//   {"marca": "Chevrolet", "price": 67000},
+//   {"marca": "Mercedes", "price": 120000}
+// ];
+// for (var info in infos) {
+//   if (int.parse(info["price"].toString()) >= 100000) {
+//     print("O carro da marca ${info["marca"]} é de luxo");
+//   } else {
+//     print("O carro da marca ${info["marca"]} é popular");
+//   }
+// }
+
+  var carteira = 95000;
+  var infos = [
+    {'carro': 'BMW', 'preço': 120000},
+    {'carro': 'Mercedes', 'preço': 100000},
+    {'carro': 'Ford', 'preço': 90000},
+    {'carro': 'Chevrolet', 'preço': 80000},
+    {'carro': 'Porsche', 'preço': 5000000},
+  ];
+
+  for (var info in infos) {
+    var precocarro = int.parse(info['preço'].toString());
+    if (int.parse(info['preço'].toString()) <= carteira) {
+      var res = carteira - precocarro;
+      print(
+          "Você pode comprar o carro da ${info['carro']} que custa R\$${info['preço']}"
+          " O valor restante na sua carteira após comprar um ${info['carro']} é de R\$$res");
+    } else {
+      var fal = precocarro - carteira;
+      print(
+          "Você não pode comprar um carro da ${info['carro']} você precisa de mais R\$$fal para compralo.");
     }
   }
 }
