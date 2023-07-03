@@ -764,5 +764,40 @@ class carro {
 
   carro(this.marca, this.modelo, this.ano, this.cilindros, this.cor);
 }
+
+  var num1 = 10;
+  var num2 = 20;
+  var opr = "multi";
+
+  if (opr == "add") {
+    somar(num1, num2);
+  } else if (opr == "sub") {
+    sub(num1, num2);
+  } else if (opr == "div") {
+    div(num1, num2);
+  } else if (opr == "multi") {
+    multi(num1, num2);
+  }
+}
+
+void somar(n1, n2) {
+  var r = n1 + n2;
+  print(r);
+}
+
+void div(n1, n2) {
+  var r = n1 / n2;
+  print(r);
+}
+
+void sub(n1, n2) {
+  var r = n1 - n2;
+  print(r);
+}
+
+void multi(n1, n2) {
+  var r = n1 * n2;
+  print(r);
+}
 */
 }
