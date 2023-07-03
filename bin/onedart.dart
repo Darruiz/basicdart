@@ -799,5 +799,12 @@ void multi(n1, n2) {
   var r = n1 * n2;
   print(r);
 }
+
+
+
+void no dart é a função semi aberta em nome por exemplo 
+void somar(n1, n2) 
+var r = n1 + n2; 
+print(r);
 */
 }
