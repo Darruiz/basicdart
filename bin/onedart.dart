@@ -713,5 +713,56 @@ class pagarcomcartao implements pagamento {
     print("Pagando com cartão");
   }
 }
+
+
+  carro carro1 = ferrari();
+  carro1.anda();
+  carro carro2 = gol();
+  carro2.anda();
+}
+
+abstract class carro {
+  void anda();
+}
+
+class ferrari implements carro {
+  void anda() {
+    print("Estou andando a 400km/H");
+  }
+}
+
+class gol implements carro {
+  void anda() {
+    print("Estou andando a 80km/H");
+  }
+}
+
+
+  var infos = [
+    infocar("Darruiz", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+    infocar("Gustavo", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+    infocar("Diego", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+  ];
+  for (var info in infos) {
+    print("O ${info.nome}");
+  }
+}
+
+class infocar {
+  String nome;
+  dynamic carro;
+
+  infocar(this.nome, this.carro);
+}
+
+class carro {
+  String marca;
+  String modelo;
+  int ano;
+  int cilindros;
+  String cor;
+
+  carro(this.marca, this.modelo, this.ano, this.cilindros, this.cor);
+}
 */
 }
