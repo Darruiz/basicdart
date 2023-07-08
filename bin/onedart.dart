@@ -807,4 +807,30 @@ void somar(n1, n2)
 var r = n1 + n2; 
 print(r);
 */
+
+  var infos = [
+    infocar("Darruiz", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+    infocar("Gustavo", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+    infocar("Diego", carro("Lamborghini", "Veneno", 1987, 12, "Preta")),
+  ];
+  for (var info in infos) {
+    print("O ${info.nome}");
+  }
+}
+
+class infocar {
+  String nome;
+  dynamic carro;
+
+  infocar(this.nome, this.carro);
+}
+
+class carro {
+  String marca;
+  String modelo;
+  int ano;
+  int cilindros;
+  String cor;
+
+  carro(this.marca, this.modelo, this.ano, this.cilindros, this.cor);
 }
